@@ -1,0 +1,37 @@
+/* Summary of given facts
+1 year in a human's life = 45 years in a dog's life
+the first 2 years = 10.5 dog years
+the following year = 4 dog years
+how old would I be if I were a dog? */
+
+// Declare myAge variable and assign the value of Dana's age to the variable 
+const myAge = 29;
+// Declare earlyYear variable and assign the number 2 to it. Note the value saved can change
+let earlyYears = 2;
+
+// Calc the equivalent dog years for the first two years of a human's life
+earlyYears = earlyYears * 10.5; 
+
+// Substract the first two years (already calculated) from myAge variable
+let laterYears = myAge - 2;
+// Calc the equivalent dog years for the following years of a human's life
+laterYears = laterYears * 4;
+// Print results
+console.log(earlyYears);
+console.log(laterYears);
+
+// Add earlyYears and laterYears together and assign the total to a new variable myAgeInDogYears
+let myAgeInDogYears = earlyYears + laterYears;
+// Write your name lowercase using .tolowercase() method and store the result in a variable myName
+let myName = "";
+myName = myName.toLowerCase();
+myName = "Dana";
+// Test: print myName to see if it's working well
+console.log(myName);
+
+// Print your name and your age in dog years
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
+//Print a new line 
+console.log(`\n`);
+// Note down the knowledge used
+console.log(`knowledge used here: math operators, variables in JavaScript`);
